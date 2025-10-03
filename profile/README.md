@@ -17,7 +17,7 @@ To support homelab and small projects, users that sign up on https://sqlrsync.co
 - Use `--subscribe` to automatically refresh read-replicas when new data is uploaded
 - Creates a [`-sqlrsync` file](https://sqlrsync.com/help/dash-sqlrsync) file neighboring the replicated database which can be shared to PULL down the database elsewhere.
 - Stores the PUSH key in ~/.config/sqlrsync/ to allow unattended re-PUSHing of the database (great for a cron job)
-- LOCAL Sync (when sqlrsync is provided 2 arguments, both local file paths) allows for a local-only (no server/network use) rsyncing of a running write-node SQLite database to a running read-only SQLite database with no readlocks.
+- LOCAL Sync (when sqlrsync is provided 2 arguments, both local file paths) allows for a local-only (no server/network use) rsyncing of a running write-node SQLite database to a running read-only SQLite database with no readlocks
 - The same mechanism works for PUSH and PULL: the ORIGIN can be a running write-node and the REPLICA can be a running read-only node.  It's pretty magical.
 
 ### In PUSH, PULL, or LOCAL mode:
