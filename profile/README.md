@@ -5,10 +5,12 @@ The CDN and version-controlled backup solution for SQLite
 Launched October 1st 2025 at [sqlrsync.com](https://sqlrsync.com/)
 
 ## Value Proposition
-SQLRsync is the only SQLite backup and content distribution system that can be run against running SQLite databases:
+SQLRsync is the only cloud-backed SQLite backup and content distribution system that can be run against running SQLite databases:
 - No downtime or write locks in backing up your app's database
 - No downtime on read-replicas
 - After an initial synchronization, subsequent data transfers only move the modified SQLite Pagedata data: so it's fast, efficient, and great for resource-constrained IoT or edge services.
+
+To support homelab and small projects, users that sign up on https://sqlrsync.com/ unlock 100mb of SQLite storage for life.  (Some terms and conditions apply.)
 
 ## Features:
 - PUSH and PULL rsync of sqlite3 database files to a remote SQLRsync server (defaults to sqlrsync.com)
